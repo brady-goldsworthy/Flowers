@@ -10,11 +10,14 @@ class Flower {
 
   update() {
     this.flowerStem = new FlowerStem(this.stem_bottom_x, this.stem_bottom_y, this.stem_top_x, this.stem_top_y);
-    this.flowerBloom = new FlowerBloom(this.stem_top_x, this.stem_top_y, this.bloom_radius);
+    this.flowerTop = new FlowerTop(this.stem_top_x, this.stem_top_y, this.bloom_radius);
   }
 
   show() {
+    this.flowerStem.update();
     this.flowerStem.show();
-    this.flowerBloom.show();
+
+    this.flowerTop.update();
+    this.flowerTop.show();
   }
 }

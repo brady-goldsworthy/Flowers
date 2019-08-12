@@ -11,7 +11,8 @@ class FlowerBloom {
 
   show() {
       stroke(0);
-      strokeWeight(5);
+      strokeWeight(2);
+
       circle(this.bloom_center_x, this.bloom_center_y, this.bloom_radius * 2);
   }
 }

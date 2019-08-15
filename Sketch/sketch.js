@@ -5,6 +5,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   this.x_middle = windowWidth / 2;
   this.y_middle = windowHeight / 2;
+  noLoop();
 }
 
 function draw() {

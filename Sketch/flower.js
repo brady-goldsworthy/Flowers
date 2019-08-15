@@ -5,6 +5,7 @@ class Flower {
       this.flower_height = 100;
       this.stem_top_x = x_middle;
       this.stem_top_y = y_middle - this.flower_height;
+      //TODO Decide stem radius off of canvas size
       this.bloom_radius = 15;
   }
 

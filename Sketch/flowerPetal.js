@@ -32,7 +32,7 @@ class FlowerPetal {
   }
 
   rotateVector(bloomRadius, theta) {
-    let originVector = math.matrix([[(1 * bloomRadius)],[(0 * bloomRadius)]]);
+    let originVector = math.matrix([[(0 * bloomRadius)],[(-1 * bloomRadius)]]);
     let rotationMatrix = math.matrix([[cos(theta), (-1 * sin(theta))], [sin(theta), cos(theta)]]);
 
     return math.multiply(rotationMatrix, originVector);

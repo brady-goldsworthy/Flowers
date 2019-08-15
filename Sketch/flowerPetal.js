@@ -27,7 +27,7 @@ class FlowerPetal {
   show() {
     stroke(0);
     strokeWeight(2);
-  // bezier(x1, y1, x2, y2, x3, y3, x4, y4)
+    fill(255);
     bezier(this.p1.x, this.p1.y, this.cp1.x, this.cp1.y, this.cp2.x, this.cp2.y, this.p2.x, this.p2.y);
   }
 
